@@ -44,11 +44,6 @@ export function createTerrain(scene) {
     wireframe: false
   });
   
-  // Log any shader compilation errors
-  material.onBeforeCompile = (shader) => {
-    console.log('Shader compiled successfully');
-  };
-  
   // Create mesh
   const mesh = new THREE.Mesh(geometry, material);
   
